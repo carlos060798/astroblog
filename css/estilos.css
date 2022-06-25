@@ -43,4 +43,12 @@ body {
 #post {
     background: #fff;
     padding: 1em
+} 
+.footer{
+    background: rgb(8, 8, 8);
+    text-align: center;
+}
+h2{
+    color: blanchedalmond;
+    font-weight: 700;
 }
