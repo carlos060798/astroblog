@@ -1,0 +1,32 @@
+---
+// los layout son plantillas que nos permiten poder tener un diseño base para todas las paginas de nuestra aplicacion
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+// <slot /> => es un componente que nos permite poder renderizar el contenido de la pagina 
+//que esta utilizando el layout
+
+// los props para poder acceder a las propiedades que se le pasan a la pagina 
+const { pageTitle } = Astro.props;
+
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    <h1>{pageTitle}</h1>
+    <slot />
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
+</html>
