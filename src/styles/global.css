@@ -1,0 +1,27 @@
+/* estilos globales para paginas 
+los estilos se pueden pasar de forma global 
+en cada pagina de forma local como en about 
+o mediante un fraword como bostrap o tailwincss
+
+*/
+html {
+    background-color: #f1f5f9;
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }

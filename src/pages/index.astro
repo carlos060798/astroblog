@@ -1,5 +1,13 @@
 ---
+import "../styles/global.css"
+import Navigation from '../components/Navigation.astro';
+import Footer from "../components/Footer.astro";
+import Social from "../components/Social.astro";
 
+const pageTitle = 'Home';
+// las props se pasan como atributos como en jsx
+const platform = "github";
+const username = "withastro";
 ---
 
 <html lang="en">
@@ -8,11 +16,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-<a href="/about/">About</a>  <a href="/blog/">Blog</a>
-		<h1>My Astro Site</h1>
+		<Navigation />
+		<h1>{pageTitle}</h1>
+		<Footer/>
+		<Social platform="twitter" username="astrodotbuild" />
+		<Social platform="github" username="withastro" />
+		<Social platform="youtube" username="astrodotbuild" />
 	</body>
 </html>
