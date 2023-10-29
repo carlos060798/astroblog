@@ -1,2 +1,2 @@
-# blog-de-git-plazy
-proyecto de ejenplo de plazi
+# blog-de- astro
+proyecto de ejenplo de  astro js
