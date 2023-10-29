@@ -1,0 +1,6 @@
+---
+// componete que maneja las url y nombre delos enlaces de redirecion al blog
+const { title, url } = Astro.props;
+---
+
+<li><a href={url}>{title}</a></li>
